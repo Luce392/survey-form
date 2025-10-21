@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  
+  <h1 id="title">User Feedback Survey</h1>
+  <p id="description">We would love to hear your thoughts! Please fill out the form below.</p>
+
+  <form id="survey-form">
+<fieldset>
+    <label id="name-label" for="name">Full Name:</label>
+    <input id="name" type="text" placeholder="Enter your full name" required><br><br>
+
+
+    <label id="email-label" for="email">Email Address:</label>
+    <input id="email" type="email" placeholder="Enter your email" required><br><br>
+    
+
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" placeholder="Enter your age" min="1" max="120"><br><br>
+</fieldset>
+
+<fieldset>
+    <label for="dropdown">Favorite Programming Language:</label>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="htmlcss">HTML/CSS</option>
+    </select><br><br>
+    </fieldset>
+
+<fieldset>
+    <legend>Experience Level:</legend>
+    <input type="radio" name="experience" value="beginner" id="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" name="experience" value="intermediate" id="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" name="experience" value="advanced" id="advanced">
+    <label for="advanced">Advanced</label><br><br>
+</fieldset>
+
+    <fieldset>
+    <legend>Technologies You Use:</legend>
+    <input type="checkbox" name="tech" value="html" id="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="tech" value="css" id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="tech" value="js" id="js">
+    <label for="js">JavaScript</label><br><br>
+</fieldset>
+
+<fieldset>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Write your comments here..." rows="10"></textarea><br><br>
+
+    <button id="submit" type="submit">Submit Survey</button>
+</fieldset>
+
+  </form>
+
+</body>
+</html>
